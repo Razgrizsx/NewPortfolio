@@ -8,18 +8,18 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useAutoHide(menuRef, setIsMenuOpen);
   return (
-    <div className='relative bg-gray-900 z-50'>
+    <div className='relative bg-back-200 z-50'>
       <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
         <div className='relative flex items-center justify-between'>
           <a
             href='/'
-            aria-label='RaulWebDev'
-            title='RaulWebDev'
+            aria-label='ChrisDev'
+            title='ChrisDev'
             className='inline-flex items-center'
           >
-            <i className='mr-2 text-2xl text-blue-accent-400 fa-solid fa-layer-group'></i>
+            <i className='mr-2 text-2xl text-red-accent-400 fa-solid fa-layer-group'></i>
             <span className='ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase'>
-              RaulWebDev
+              ChrisDev
             </span>
           </a>
           <ul className='items-center hidden space-x-8 lg:flex'>
@@ -27,7 +27,7 @@ const NavBar = () => {
               <a
                 href='#about-me'
                 onClick={handleScroll}
-                className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-accent-200'
+                className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-red-accent-200'
               >
                 About Me
               </a>
@@ -36,7 +36,7 @@ const NavBar = () => {
               <a
                 href='#skills'
                 onClick={handleScroll}
-                className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-accent-200'
+                className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-red-accent-200'
               >
                 Skills
               </a>
@@ -45,7 +45,7 @@ const NavBar = () => {
               <a
                 href='#projects'
                 onClick={handleScroll}
-                className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-blue-accent-200'
+                className='font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-red-accent-200'
               >
                 Projects
               </a>
@@ -56,7 +56,7 @@ const NavBar = () => {
               <a
                 href='#contact-me'
                 onClick={handleScroll}
-                className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-accent-400 hover:bg-blue-accent-700 focus:shadow-outline focus:outline-none'
+                className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-accent-200 hover:text-red-accent-400 focus:shadow-outline focus:outline-none'
               >
                 Contact Me
               </a>
@@ -85,14 +85,14 @@ const NavBar = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className='absolute top-0 left-0 w-full'>
-                <div className='p-5 bg-white border rounded shadow-sm'>
+              <div className='absolute top-0 left-0 w-full text-white'>
+                <div className='p-5 bg-back-200 text-white border rounded shadow-sm'>
                   <div className='flex items-center justify-between mb-4'>
                     <div>
                       <a href='/' className='inline-flex items-center'>
-                        <i className='mr-2 text-2xl text-blue-accent-400 fa-solid fa-layer-group'></i>
-                        <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                          RaulWebDev
+                        <i className='mr-2 text-2xl text-red-accent-400 fa-solid fa-layer-group'></i>
+                        <span className='ml-2 text-xl font-bold tracking-wide uppercase'>
+                        ChrisDev
                         </span>
                       </a>
                     </div>
@@ -118,7 +118,7 @@ const NavBar = () => {
                         <a
                           href='#about-me'
                           onClick={handleScroll}
-                          className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-accent-200'
+                          className='font-medium tracking-wide  transition-colors duration-200 hover:text-red-accent-200'
                         >
                           About Me
                         </a>
@@ -127,7 +127,7 @@ const NavBar = () => {
                         <a
                           href='#skills'
                           onClick={handleScroll}
-                          className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-accent-200'
+                          className='font-medium tracking-wide  transition-colors duration-200 hover:text-red-accent-200'
                         >
                           Skills
                         </a>
@@ -136,7 +136,7 @@ const NavBar = () => {
                         <a
                           href='#projects'
                           onClick={handleScroll}
-                          className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-accent-200'
+                          className='font-medium tracking-wide  transition-colors duration-200 hover:text-red-accent-200'
                         >
                           Projects
                         </a>
@@ -145,7 +145,7 @@ const NavBar = () => {
                         <a
                           href='#contact-me'
                           onClick={handleScroll}
-                          className='bg-blue-accent-200 font-medium tracking-wide text-white px-4 py-2'
+                          className='bg-red-accent-200 hover:text-red-accent-400 rounded-md font-medium tracking-wide text-white px-4 py-2'
                         >
                           Contact Me
                         </a>

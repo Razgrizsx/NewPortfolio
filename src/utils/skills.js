@@ -1,24 +1,23 @@
 const skills = [
   {
-    icon: "text-blue-accent-700 text-4xl fab fa-html5",
+    icon: "text-red-accent-400 text-4xl fab fa-html5",
     title: "FrontEnd",
     skills: [
       "HTML",
       "CSS",
+      "Angular",
       "JavaScript",
       "React",
       "Redux",
       "NextJs",
       "TailwindCSS",
       "Bootstrap",
-      "jQuery",
-      "OAuth2",
       "APIs",
       "MaterialUI",
     ],
   },
   {
-    icon: "text-blue-accent-700 text-4xl fa-solid fa-code",
+    icon: "text-red-accent-400 text-4xl fa-solid fa-code",
     title: "BackEnd",
     skills: [
       "NodeJS",
@@ -27,16 +26,14 @@ const skills = [
       "Sequelize",
       "MongoDB",
       "Mongoose",
-      "GraphQL",
-      "Apollo",
       "RestAPI",
       "Python",
-      "Java/SpringBoot",
-      "Spring Security",
+      "Prisma",
+
     ],
   },
   {
-    icon: "text-blue-accent-700 text-4xl fa-solid fa-screwdriver-wrench",
+    icon: "text-red-accent-400 text-4xl fa-solid fa-screwdriver-wrench",
     title: "Tools",
     skills: [
       "Git",
@@ -49,8 +46,6 @@ const skills = [
       "TypeScript",
       "Jest",
       "Scrum Board",
-      "SEO",
-      "IntelliJ",
     ],
   }
 ];

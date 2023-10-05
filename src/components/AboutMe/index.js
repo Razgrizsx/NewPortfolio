@@ -1,9 +1,9 @@
-import Picture from "../../img/picture.png";
+import Picture from "../../img/code.png";
 
 const AboutMe = () => {
   return (
-    <div id="about-me" className="relative bg-gray-900">
-      <div className="barber-pic absolute top-0 left-0 right-0 bottom-0 z-0 opacity-10"></div>
+    <div id="about-me" className="relative bg-gray-700">
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-0 opacity-10"></div>
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-white">
         <div className="max-w-xl mb-10 md:mx-auto lg:max-w-5xl md:mb-12">
           <h2 className="text-center max-w-lg mx-auto mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-100 sm:text-4xl md:mx-auto">
@@ -36,15 +36,15 @@ const AboutMe = () => {
           </h2>
           <div className="w-full flex flex-wrap">
             <div className="w-full lg:w-1/2 p-2 flex items-center">
-            <img src={Picture} alt="Raul" className="mx-auto rounded-lg border border-gray-800 shadow-md" />
+            <img src={Picture} alt="Raul" className="mx-auto rounded-lg  shadow-md" />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col justify-center p-2 py-8">
               <p className="text-base text-gray-400 md:text-lg">
-                My name is Raul and I am a talented barber and full stack
-                developer. I have been working in the barbering industry for two
-                decades and have developed a keen eye for details. In my free
-                time, I enjoy listening to music and drawing, I have always had
-                a love for music and find that it helps to relax and inspire me
+                My name is Chris and I am a full stack
+                developer. I have been working in the technology industry
+                years and have developed a keen eye for details. In my free
+                time, I enjoy listening to music, drawing and games, I have always had
+                a love for these and find that it helps to relax and inspire me
                 in my work.
               </p>
               <p className="mt-4 text-base text-gray-400 md:text-lg">
