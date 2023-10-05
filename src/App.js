@@ -1,11 +1,11 @@
-import Hero from './components/hero';
+import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import GoToTheTop from './components/GoToTheTop';
 import Skills from './components/Skills';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import ContactMe from './components/ContactMe';
-import NavBar from './components/navbar';
+import NavBar from './components/NavBar';
 
 
 function App() {
