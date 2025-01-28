@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <div className='overflow-hidden h-[100vh]'>
       <div className='relative px-4 pt-28 mx-auto h-full text-white md:px-24 lg:px-8 lg:pt-20'>
-        <div className='flex flex-col h-full items-center sm:justify-center lg:justify-between w-full lg:flex-row'>
+        <div className='flex flex-col h-full items-center sm:justify-center lg:justify-around w-full lg:flex-row'>
           <div className='mb-16 lg:mb-0  lg:pr-5'>
             <div className=' mb-6 lg:text-end'>
-              <h2 className='font-sans text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none  mb-6'>
+              <h2 className='font-sans text-3xl font-bold tracking-tight text-start sm:text-4xl sm:leading-none  mb-6'>
                 Hi there, I'm{" "}
                 <span className='inline-block text-red-accent-400'>Chris</span>
               </h2>
@@ -26,7 +26,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className='flex items-center justify-center lg:w-1/2 rounded-md'>
+          <div className='flex items-center justify-center  rounded-md'>
             <div className='flex w-full relative rounded-md'>
               <img className='z-50 pb-2 rounded-md' src={Profile} alt='' />
             </div>
