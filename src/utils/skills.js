@@ -14,7 +14,11 @@ const skills = [
       "Bootstrap",
       "APIs",
       "MaterialUI",
-    ],
+      "Jotai",
+      "React Three Fiber (R3F)",
+      "Three.js",
+      "GSAP"
+    ]
   },
   {
     icon: "text-red-accent-400 text-4xl fa-solid fa-code",
@@ -22,15 +26,15 @@ const skills = [
     skills: [
       "NodeJS",
       "Express",
+      "Nest.js",
       "MySQL",
       "Sequelize",
       "MongoDB",
       "Mongoose",
       "RestAPI",
       "Python",
-      "Prisma",
-
-    ],
+      "Prisma"
+    ]
   },
   {
     icon: "text-red-accent-400 text-4xl fa-solid fa-screwdriver-wrench",
@@ -45,8 +49,8 @@ const skills = [
       "Webpack",
       "TypeScript",
       "Jest",
-      "Scrum Board",
-    ],
+      "Scrum Board"
+    ]
   }
 ];
 

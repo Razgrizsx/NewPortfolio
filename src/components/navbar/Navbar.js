@@ -1,6 +1,6 @@
-import { useState, useRef } from 'react';
-import { handleScroll } from '../../utils/handleScroll';
-import useAutoHide from 'auto-hide-hook';
+import { useState, useRef } from "react";
+import { handleScroll } from "../../utils/handleScroll";
+import useAutoHide from "auto-hide-hook";
 
 const NavBar = () => {
   const menuRef = useRef(null);
@@ -8,8 +8,8 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useAutoHide(menuRef, setIsMenuOpen);
   return (
-    <div className='relative bg-back-200 z-50'>
-      <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+    <div className='fixed w-full bg-back-200 z-50'>
+      <div className='px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
         <div className='relative flex items-center justify-between'>
           <a
             href='/'
@@ -92,7 +92,7 @@ const NavBar = () => {
                       <a href='/' className='inline-flex items-center'>
                         <i className='mr-2 text-2xl text-red-accent-400 fa-solid fa-layer-group'></i>
                         <span className='ml-2 text-xl font-bold tracking-wide uppercase'>
-                        ChrisDev
+                          ChrisDev
                         </span>
                       </a>
                     </div>

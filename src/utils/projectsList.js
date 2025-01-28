@@ -1,7 +1,10 @@
-import spartanvideo from "../img/spartanvideo.png"
-import Fitness from "../img/fitness.PNG"
-import Events from "../img/Events.PNG"
-import WebApp from "../img/webapp.PNG"
+import spartanvideo from "../img/spartanvideo.png";
+import Fitness from "../img/fitness.PNG";
+import Events from "../img/Events.PNG";
+import WebApp from "../img/webapp.PNG";
+import UiTool from "../img/UiTool.png";
+import LinkZ from "../img/linkz.png";
+import VDGames from "../img/VDGames.png";
 
 const projects = [
   {
@@ -20,14 +23,14 @@ const projects = [
       "MongoDB",
       "Webpack",
       "NextAuth",
-      "Vercel",
+      "Vercel"
     ],
     github: "https://github.com/Razgrizsx/Spartan-Video",
     live: "https://spartan-video.vercel.app/",
     demoAccount: {
       username: "admin@admin.com",
-      password: "admin",
-    },
+      password: "admin"
+    }
   },
   {
     title: "Fitness",
@@ -43,14 +46,42 @@ const projects = [
       "TypeScript",
       "TailWind",
       "Webpack",
-      "Vercel",
+      "Vercel"
     ],
     github: "https://github.com/Razgrizsx/Fitness_App",
-    live: "https://fitness-app-tawny.vercel.app/",
+    live: "https://fitness-app-tawny.vercel.app/"
+  },
+  {
+    title: "UiTool",
+    subTitle: "No code Editor",
+    description:
+      "UiTool is a no code app that let the users create web apps, posts, emails among other things. Then the user can share those with the world.",
+    image: UiTool,
+    technologies: [
+      "NextJS",
+      "TailwindCSS",
+      "TypeScript",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Drag and Drop"
+    ],
+    github: "",
+    live: "https://uitool-dev.vercel.app"
+  },
+  {
+    title: "LinkZ",
+    subTitle: "List of Links",
+    description:
+      "LinkZ is an app that let the users create list of links to their social media or any other site that they want, it offers a variety of options to customize the links (currently under development)",
+    image: LinkZ,
+    technologies: ["ReactJs", "TailwindCSS", "TypeScript", "NestJs", "MongoDB"],
+    github: "",
+    live: "https://linkz-client.vercel.app/auth"
   },
   {
     title: "WebStore",
-    subTitle: "ecommerce",
+    subTitle: "E-commerce",
     description:
       "WebStore is an ecommerce, it includes the marketplace, cart and payment.",
     image: WebApp,
@@ -63,10 +94,30 @@ const projects = [
       "NodeJs",
       "Express",
       "Webpack",
-      "Vercel",
+      "Vercel"
     ],
     github: "https://github.com/Razgrizsx/WebStore-Angular",
-    live: "https://web-store-angular.vercel.app/home",
+    live: "https://web-store-angular.vercel.app/home"
+  },
+  {
+    title: "VDGames",
+    subTitle: "E-commerce",
+    description:
+      "VDGames is an videogame ecommerce that simulates steam, it was part of a project for a bootcamp. It includes the list of products, cart, payment, dashboard, login with security, newsletter.",
+    image: VDGames,
+    technologies: [
+      "ReactJs",
+      "CSS",
+      "Tailwind",
+      "TypeScript",
+      "Stripe",
+      "NodeJs",
+      "Express",
+      "Webpack",
+      "Vercel"
+    ],
+    github: "https://github.com/madrizjosea/EVideogames",
+    live: ""
   },
   {
     title: "Spartan Events",
@@ -74,16 +125,10 @@ const projects = [
     description:
       "Spartan Events is a simple app where the user can look up events in different cities.",
     image: Events,
-    technologies: [
-      "NextJs",
-      "CSS",
-      "JavaScript",
-      "Webpack",
-      "Vercel",
-    ],
+    technologies: ["NextJs", "CSS", "JavaScript", "Webpack", "Vercel"],
     github: "https://github.com/Razgrizsx/Events-App-Nextjs",
-    live: "https://spartanevents.vercel.app/events/barcelona",
-  },
+    live: "https://spartanevents.vercel.app/events/barcelona"
+  }
 ];
 
 export default projects;
