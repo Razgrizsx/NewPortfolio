@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
           <div className='flex items-center justify-center  rounded-md'>
             <div className='flex w-full relative rounded-md'>
-              <img className='z-50 pb-2 rounded-md' src={Profile} alt='' />
+              <img className='z-40 pb-2 rounded-md' src={Profile} alt='' />
             </div>
           </div>
         </div>
