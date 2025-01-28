@@ -38,66 +38,68 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className='border text-gray-800 border-gray-800 flex flex-col overflow-hidden transition-shadow duration-300 rounded shadow-md '
+              className='border bg-white text-gray-800 border-gray-800 flex flex-col justify-between overflow-hidden transition-shadow duration-300 rounded shadow-md '
             >
-              <img
-                src={project.image}
-                className='object-cover w-full h-64'
-                alt=''
-              />
-              <div className='p-5 flex flex-col bg-white flex-1'>
-                <h1 className='inline-block mb-3 text-2xl font-bold leading-5'>
-                  {project.title}
-                </h1>
-                <h2 className='inline-block text-gray-600 mb-3 text-xl font-bold leading-5'>
-                  {project.subTitle}
-                </h2>
-                <p className='mb-2 text-gray-700'>{project.description}</p>
-                {project.demoAccount && (
-                  <DemoAccount demoAccount={project.demoAccount} />
-                )}
-                <div className='flex flex-wrap space-x-2 mt-5'>
+              <div>
+                <img
+                  src={project.image}
+                  className='object-cover w-full h-64'
+                  alt=''
+                />
+                <div className='p-5 flex flex-col bg-white flex-1'>
+                  <h1 className='inline-block mb-3 text-2xl font-bold leading-5'>
+                    {project.title}
+                  </h1>
                   <h2 className='inline-block text-gray-600 mb-3 text-xl font-bold leading-5'>
-                    Technologies:
+                    {project.subTitle}
                   </h2>
-                  {project.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className='px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full'
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className='flex flex-wrap space-x-2 mt-5'>
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label=''
-                      className='inline-flex px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg text-black'
-                    >
-                      Live Demo
-                    </a>
+                  <p className='mb-2 text-gray-700'>{project.description}</p>
+                  {project.demoAccount && (
+                    <DemoAccount demoAccount={project.demoAccount} />
                   )}
+                  <div className='flex flex-wrap space-x-2 mt-5'>
+                    <h2 className='inline-block text-gray-600 mb-3 text-xl font-bold leading-5'>
+                      Technologies:
+                    </h2>
+                    {project.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className='px-2 py-1 mb-2 mr-2 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full'
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className='flex flex-wrap space-x-2 mt-5 ml-2 mb-2'>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label=''
+                    className='inline-flex rounded-md px-4 py-2 items-center transform font-semibold border transition duration-300 hover:scale-105 shadow hover:shadow-lg text-black'
+                  >
+                    Live Demo
+                  </a>
+                )}
 
-                  {project.github ? (
-                    <a
-                      href={project.github}
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label=''
-                      className='inline-flex bg-blue-accent-200 hover:bg-blue-accent-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white'
-                    >
-                      Source Code
-                    </a>
-                  ) : (
-                    <div className='flex items-center justify-center'>
-                      Private Repository
-                    </div>
-                  )}
-                </div>
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label=''
+                    className='inline-flex rounded-md bg-blue-accent-200 hover:bg-blue-accent-700 shadow hover:shadow-lg px-4 py-2 items-center font-semibold transition duration-300 hover:scale-105 text-white'
+                  >
+                    Source Code
+                  </a>
+                ) : (
+                  <div className='flex items-center justify-center'>
+                    Private Repository
+                  </div>
+                )}
               </div>
             </div>
           ))}

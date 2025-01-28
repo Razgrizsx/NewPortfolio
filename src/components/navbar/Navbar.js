@@ -56,14 +56,14 @@ const NavBar = () => {
               <a
                 href='#contact-me'
                 onClick={handleScroll}
-                className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-accent-200 hover:text-red-accent-400 focus:shadow-outline focus:outline-none'
+                className='inline-flex opacity-90 hover:opacity-100 items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-accent-200  focus:shadow-outline focus:outline-none'
               >
                 Contact Me
               </a>
             </li>
             <a
               href='https://drive.google.com/uc?export=download&id=1N3-yKox_nYXXRzTA1DRYIUdS2uUS4bNe'
-              className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-accent-200 hover:text-red-accent-400 focus:shadow-outline focus:outline-none'
+              className='inline-flex opacity-90 hover:opacity-100 items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-accent-200  focus:shadow-outline focus:outline-none'
             >
               Download CV
             </a>
