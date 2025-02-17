@@ -2,7 +2,7 @@ import Picture from "../../img/code.png";
 
 const AboutMe = () => {
   return (
-    <div id='about-me' className='relative '>
+    <div id='about-me' className='relative bg-gray-900'>
       <div className='absolute top-0 left-0 right-0 bottom-0 z-0 opacity-10'></div>
       <div className='relative px-4 py-16 mx-auto  md:px-24 lg:px-8 lg:py-20 text-white'>
         <div className=' mb-10  md:mb-12'>

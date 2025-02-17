@@ -45,9 +45,19 @@ const Skills = () => {
               {skill.title}
             </h6>
             {skill.skills.map((item, index) => (
-              <p key={index} className=' mb-3 text-sm  mx-auto'>
-                {item}
-              </p>
+              <div
+                key={index}
+                className=' mb-2 text-sm mx-auto flex flex-row items-center justify-between w-28 gap-2'
+              >
+                <img
+                  className='w-1/3 h-full'
+                  alt='icon'
+                  src={item?.icon || ""}
+                ></img>
+                <p className='w-full text-left whitespace-nowrap'>
+                  {item?.name || "none"}
+                </p>
+              </div>
             ))}
           </div>
         ))}
