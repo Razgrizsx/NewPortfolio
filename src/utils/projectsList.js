@@ -5,6 +5,7 @@ import WebApp from "../img/webapp.PNG";
 import UiTool from "../img/UiTool.png";
 import LinkZ from "../img/linkz.png";
 import VDGames from "../img/VDGames.png";
+import Dager from "../img/dager.png";
 
 const projects = [
   {
@@ -68,6 +69,23 @@ const projects = [
     ],
     github: "",
     live: "https://uitool-dev.vercel.app"
+  },
+  {
+    title: "Dot Dager",
+    subTitle: "Landing Page",
+    description:
+      "This is a page my team in Abstract and i made for the youtuber Dot Dager as part of a competition, it contains a good amount of technologies like 3d models and lighting",
+    image: Dager,
+    technologies: [
+      "ReactJs",
+      "CSS",
+      "Tailwind",
+      "TypeScript",
+      "React three fiber",
+      "ThreeJs"
+    ],
+    github: "",
+    live: "https://dot-dager-pickles.netlify.app"
   },
   {
     title: "LinkZ",
